@@ -1,0 +1,28 @@
+{
+  "name": "food-demo",
+  "version": "1.0.0",
+  "description": "Food static page demo",
+  "author": "Martin Starosta (LabZone)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/webpack/bin/webpack",
+    "watch": "node ./node_modules/webpack/bin/webpack --watch",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}

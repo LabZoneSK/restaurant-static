@@ -1,0 +1,40 @@
+/** Custom Fonts **/
+
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('../fonts/ChunkFive-Regular.otf') format('otf');
+}
+
+.montserrat-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.chunkfive-bold {
+    font-family: 'ChunkFive', sans-serif;
+    font-weight: 900;
+}
+
+
+/** Custom colors **/
+
+.text-yellow {
+    color: #F0C829;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.jumbotron-pizza {
+    background-image: url(../images/interior.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    min-height: 60vh;
+}
+
+.footer {
+    background-color: #F0C829;
+    color: black;
+}
