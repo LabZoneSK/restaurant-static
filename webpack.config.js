@@ -8,6 +8,9 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
+        proxy: {
+            '/api': 'http://127.0.0.1:7071'
+        }
     },
     output: {
         filename: 'bundle.js',
@@ -20,8 +23,7 @@ module.exports = {
         })
     ],
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.css$/,
                 use: [
                     'style-loader',
@@ -30,13 +32,12 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: 'images',
-                        },
-                    }],
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'images',
+                    },
+                }],
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,

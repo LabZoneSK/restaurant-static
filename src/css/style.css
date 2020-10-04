@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 /** Custom Fonts **/
 
 @font-face {
@@ -18,23 +23,46 @@
 
 /** Custom colors **/
 
-.text-yellow {
-    color: #F0C829;
+.text-brown {
+    color: #5A2E2E;
 }
 
-.bg-black {
-    background-color: black;
+.text-dark {
+    color: #2A2C31;
+}
+
+.text-cream {
+    color: #DFBA69;
+}
+
+.bg-my-dark {
+    background-color: #2A2C31;
     color: white;
 }
 
-.jumbotron-pizza {
+.bg-cream {
+    background-color: #DFBA69;
+}
+
+.jumbotron-hero {
     background-image: url(../images/interior.jpg);
     background-position: bottom center;
     background-size: cover;
     min-height: 60vh;
 }
 
-.footer {
-    background-color: #F0C829;
-    color: black;
+.text-light {
+    font-weight: 200;
+}
+
+.icon {
+    height: 24px;
+}
+
+.spacer {
+    margin: 5rem 0;
+}
+
+.booking {
+    padding: 3rem 0;
 }
